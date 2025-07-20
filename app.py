@@ -2,9 +2,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 
-model = load_model('diabetes_model.keras')
+model = tf.keras.models.load_model('diabetes_model.keras')
 diabetes_data = pd.read_csv('diabetes.csv')
 
 # Prepare the data
