@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import tensorflow as tf
 
-model = tf.keras.models.load_model('diabetes_model.keras')
+model = tf.keras.models.load_model('Diabetes_model.keras')
 diabetes_data = pd.read_csv('diabetes.csv')
 
 # Prepare the data
